@@ -19,6 +19,7 @@ export default class ActivityIndicator extends Component {
   }
   render() {
     let diameter = this.props.diameter || 20
+    diameter = parseInt(diameter)
     let acColor = this.props.activeColor || "black"
     let n = this.props.number || 3
     let indicatorStyle = {
