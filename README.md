@@ -4,6 +4,8 @@ Simple yet highly configurable activity indicator for React.
 
 ![See me work](http://i.imgur.com/gtERQ2h.gif)
 
+## [Demo](https://blockninja.github.io/react-activity-indicator/)
+
 ## Installation
 
 Install with NPM: `npm install react-activity-indicator`

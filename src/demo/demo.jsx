@@ -35,8 +35,11 @@ class ExampleComponent extends Component {
 ReactDOM.render(
 	<div className="act-demo">
 		<h2>React Activity Indicator</h2>
-		<div>
+		<div style={{background: 'white'}}>
 			<ExampleComponent />
+		</div>
+		<div>
+			<ActivityIndicator number={3} duration={200} color="#ddd" borderRadius="50%" activeColor="#0070bf" borderColor="#0070bf" borderWidth={0} diameter="10px" />
 		</div>
 		<div style={{background: 'white'}}>
 			<ActivityIndicator />
