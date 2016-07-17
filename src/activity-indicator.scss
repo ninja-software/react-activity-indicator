@@ -1,0 +1,36 @@
+.activity-indicator {
+	width: 100%;
+	min-height: 10px;
+	position: relative;
+}
+
+.activity-indicator > div {
+	left: 50%;
+	top: 50%;
+	width: auto;
+	display: inline-block;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.activity-indicator > div > div {
+	border-radius: 10%;
+	border: 2px solid #222222;
+	color: #222222;
+	background: transparent;
+	transition-duration: 0.4s;
+	display: inline;
+	line-height: 0;
+	font-size: 0;
+}
+.activity-indicator > div > div:first-child {
+	margin-left: 0px;
+}
+
+.activity-indicator > div > div.active {
+	background-color: #222222
+}
+
+.activity-indicator > div > div:hover {
+	border-color: white;
+} 
