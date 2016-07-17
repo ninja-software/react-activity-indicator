@@ -14,20 +14,40 @@ Install with NPM: `npm install react-activity-indicator`
 class ExampleComponent extends Component {
 	constructor(props) {
 		super(props)
-		this.state = { loaded: false }
+		this.state = { loaded: false, counter:0 }
+		this.interval = setInterval(() => {
+			if (this.state.counter > 5000) {
+				this.setState({loaded: true})
+				clearInterval(this.interval)
+			}
+			this.setState({counter: this.state.counter+50})
+		},100)
   }
   render() {
     if (!this.state.loaded) {
-    	return (<div style={{background: "#222222"}}>>
-				<ActivityIndicator number={5} activeColor="red" borderWidth={0} diameter={25} borderColor="black" />
+    	return (<div style={{textAlign: 'center'}}>
+    		Loading {this.state.counter} / 5000 elements
+				<ActivityIndicator number={10} duration={200} activeColor="#0070bf" borderWidth={2} borderRadius="50%" diameter={25} />
 			</div>)
   	} else {
-  		<h3>
-  			Loaded!
-  		</h3>
+  		return (
+  			<div style={{textAlign: 'center'}}>
+	  			<h3>Loaded!</h3>
+  			</div>)
   	}
   }
 }
+
+ReactDOM.render(
+	<div>
+		<div>
+			<ExampleComponent />
+		</div>
+	</div>,
+  document.getElementById('app')
+);
+
+```
 
 ## Usage
 
