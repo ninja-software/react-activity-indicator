@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from 'react';
 
-import '.activity-indicator.scss'
+import './activity-indicator.scss'
 
 export default class ActivityIndicator extends Component {
   constructor(props) {
@@ -21,27 +21,32 @@ export default class ActivityIndicator extends Component {
   }
   render() {
     let s = {}
-    s.height = this.props.diameter || 20
-    s.width = this.props.diameter || 20
-    s.paddingLeft = this.props.diameter || 20
-    s.paddingTop = this.props.diameter || 20
-    let sx = s
-    sx.marginLeft = s.width
+
+    let diameter = this.props.diameter || 20
+    let indicatorStyle = this.props.indicatorStyle || {
+      width: diameter,
+      height: diameter,
+      paddingLeft: diameter,
+      paddingTop: diameter,
+      borderColor: this.props.borderColor || this.props.activeColor || "black"
+    }
     return (
       <div className="activity-indicator" style={this.props.style}>
         <div>
         {(() => {
-          let els = [], cls, style = s;
+          let children = [], className;
           for (var i = 0; i < this.state.number; i++) {
-            if (i > 0) style = sx
             if (this.state.active == i) {
-              cls = "indicator active"
+              indicatorStyle.background = this.props.activeColor || "black"
             } else {
-              cls = "indicator"
+              indicatorStyle.background = this.props.color || "white"
             }
-            els.push(<div key={"indicator_"+i} style={style} className={cls} />)
+            children.push(<div key={"indicator_"+i} style={{
+              marginLeft: (i > 0 ? diameter : 0),
+              ...indicatorStyle
+            }} className={className} />)
           }
-          return els
+          return children
         })()}
         </div>
       </div>
