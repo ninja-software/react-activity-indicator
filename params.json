@@ -1,0 +1,6 @@
+{
+  "name": "React-activity-indicator",
+  "tagline": "",
+  "body": "<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>\r\n<link rel=\"stylesheet\" type=\"text/css\" href=\"activityindicator.css\">\r\n<style>\r\n        \th2, h3 {\r\n        \t\ttext-align: center;\r\n        \t\tcolor: #222222;\r\n        \t\tmargin-top: 20px;\r\n        \t}\r\n        \t.act-demo > div {\r\n        \t\tpadding: 20px;\r\n        \t\theight: 100px;\r\n        \t\twidth: 100%;\r\n        \t\tmargin: 0 auto;\r\n        \t\tmax-width: 999px;\r\n        \t\toverflow: auto;\r\n        \t\tborder: 10px solid white;\r\n        \t}\r\n</style>\r\n<div id=\"app\"></div>\r\n<script src=\"demo.js\"></script>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
