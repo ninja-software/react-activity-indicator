@@ -39,11 +39,7 @@ class ExampleComponent extends Component {
 }
 
 ReactDOM.render(
-	<div>
-		<div>
-			<ExampleComponent />
-		</div>
-	</div>,
+	<ExampleComponent />,
   document.getElementById('app')
 );
 
@@ -51,8 +47,6 @@ ReactDOM.render(
 
 ## Usage
 
-ReactDOM.render(new ExampleComponent(), document.getElementById('app'))
-```
 The component accepts these props.
 
 - `number`: the number of activity indicators `default: 3`
