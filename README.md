@@ -8,7 +8,7 @@ Simple configurable activity indicator for React.
 
 Install with NPM: `npm install react-activity-indicator`
 
-## Usage
+## Example
 
 ```jsx
 class ExampleComponent extends Component {
@@ -29,13 +29,33 @@ class ExampleComponent extends Component {
   }
 }
 
+## Usage
+
 ReactDOM.render(new ExampleComponent(), document.getElementById('app'))
 ```
 The component accepts these props.
 
-- `diameter`: size of the loading indicators `default: 20px`.
-- `radius`: border radius of the loading indicators. `default: 10%`
-- `radius`: border radius of the loading indicators. `default: 10%`
+- `number`: the number of activity indicators `default: 3`
+- `diameter`: size of the loading indicators `default: 20px`
+- `duration`: color transition duration `default: 400`(ms)
+- `activeColor`: color of the active loading indicator. `default: black`
+- `borderRadius`: border radius of the loading indicators. `default: 10%`
+- `borderWidth`: border width of the loading indicators. `default: 1px`
+- `borderColor`: border color of the loading indicators. `default: black`
+
+
+```jsx
+<ActivityIndicator
+	number={5}
+	diameter={40}
+	borderWidth={1}
+	duration={300}
+	activeColor="#66D9EF"
+	borderColor="white"
+	borderWidth={5}
+	borderRadius="50%" 
+/>
+```
 
 ## Contributing
 
