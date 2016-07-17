@@ -1,6 +1,6 @@
 # React Activity Indicator
 
-Simple configurable activity indicator for React.
+Simple yet highly configurable activity indicator for React.
 
 ![See me work](http://i.imgur.com/gtERQ2h.gif)
 
