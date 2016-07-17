@@ -1,8 +1,6 @@
 import React from 'react';
 import { Component } from 'react';
 
-import './activity-indicator.scss'
-
 export default class ActivityIndicator extends Component {
   constructor(props) {
     super(props);

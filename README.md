@@ -8,6 +8,17 @@ Simple configurable activity indicator for React.
 
 Install with NPM: `npm install react-activity-indicator`
 
+Import in (es6):
+
+`import ActivityIndicator from 'react-activity-indicator'`
+
+The CSS file:
+
+```html
+<link rel="stylesheet" type="text/css" href="path/to/activityindicator.css">
+```
+
+
 ## Example
 
 ```jsx

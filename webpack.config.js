@@ -19,14 +19,6 @@ module.exports = {
   },
   module: {
     loaders: [
-      {
-        test: /\.scss$/,
-        loader: "style-loader!css!postcss!sass"
-      },
-      {
-        test: /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
-      },
       { test: /\.json$/, loader: "json" },
       {
         test: /.jsx?$/,

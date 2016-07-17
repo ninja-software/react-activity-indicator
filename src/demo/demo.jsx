@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import ActivityIndicator from '../activityindicator.jsx';
 import 'file?name=[name].[ext]!./index.html';
+import 'file?name=[name].[ext]!../activityindicator.css';
 
 class ExampleComponent extends Component {
 	constructor(props) {
