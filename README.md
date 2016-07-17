@@ -18,6 +18,31 @@ The CSS file:
 <link rel="stylesheet" type="text/css" href="path/to/activityindicator.css">
 ```
 
+## Usage
+
+The component accepts these props.
+
+- `number`: the number of activity indicators `default: 3`
+- `diameter`: size of the loading indicators `default: 20px`
+- `duration`: color transition duration `default: 400`(ms)
+- `activeColor`: color of the active loading indicator. `default: black`
+- `borderRadius`: border radius of the loading indicators. `default: 10%`
+- `borderWidth`: border width of the loading indicators. `default: 1px`
+- `borderColor`: border color of the loading indicators. `default: black`
+
+
+```jsx
+<ActivityIndicator
+	number={5}
+	diameter={40}
+	borderWidth={1}
+	duration={300}
+	activeColor="#66D9EF"
+	borderColor="white"
+	borderWidth={5}
+	borderRadius="50%" 
+/>
+```
 
 ## Example
 
@@ -54,32 +79,6 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
-```
-
-## Usage
-
-The component accepts these props.
-
-- `number`: the number of activity indicators `default: 3`
-- `diameter`: size of the loading indicators `default: 20px`
-- `duration`: color transition duration `default: 400`(ms)
-- `activeColor`: color of the active loading indicator. `default: black`
-- `borderRadius`: border radius of the loading indicators. `default: 10%`
-- `borderWidth`: border width of the loading indicators. `default: 1px`
-- `borderColor`: border color of the loading indicators. `default: black`
-
-
-```jsx
-<ActivityIndicator
-	number={5}
-	diameter={40}
-	borderWidth={1}
-	duration={300}
-	activeColor="#66D9EF"
-	borderColor="white"
-	borderWidth={5}
-	borderRadius="50%" 
-/>
 ```
 
 ## Contributing
