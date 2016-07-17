@@ -6,7 +6,7 @@ import './activity-indicator.scss'
 export default class ActivityIndicator extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {duration: this.props.duration || 400}
     this.state.number = props.number || 3
   }
   componentDidMount() {
@@ -14,32 +14,39 @@ export default class ActivityIndicator extends Component {
       let active = this.state.active
       active = (active >= this.state.number || isNaN(this.state.active) ? 0 : active+1)
       this.setState({active})
-    },800)
+    },this.state.duration * 2)
   }
   componentWillUnmount() {
     clearInterval(this.interval)
   }
   render() {
-    let s = {}
-
     let diameter = this.props.diameter || 20
-    let indicatorStyle = this.props.indicatorStyle || {
+    let acColor = this.props.activeColor || "black"
+    let n = this.props.number || 3
+    let indicatorStyle = {
       width: diameter,
       height: diameter,
-      paddingLeft: diameter,
-      paddingTop: diameter,
-      borderColor: this.props.borderColor || this.props.activeColor || "black"
+      borderRadius: this.props.borderRadius || '10%' ,
+      borderWidth:  (typeof this.props.borderWidth != "undefined" ? this.props.borderWidth : 1),
+      borderStyle: 'solid',
+      background: this.props.color || "transparent",
+      transitionDuration: this.state.duration,
+      display: 'inline-block',
+      lineHeight: diameter,
+      fontSize: 0,
+      borderColor: this.props.borderColor || acColor
     }
+    let containerWidth = n * diameter * 2
     return (
-      <div className="activity-indicator" style={this.props.style}>
-        <div>
+      <div className="activity-indicator">
+        <div style={{width: containerWidth }}>
         {(() => {
           let children = [], className;
           for (var i = 0; i < this.state.number; i++) {
             if (this.state.active == i) {
-              indicatorStyle.background = this.props.activeColor || "black"
+              indicatorStyle.background = acColor
             } else {
-              indicatorStyle.background = this.props.color || "white"
+              indicatorStyle.background = this.props.color || "transparent"
             }
             children.push(<div key={"indicator_"+i} style={{
               marginLeft: (i > 0 ? diameter : 0),

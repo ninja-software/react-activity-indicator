@@ -8,7 +8,7 @@ var precss       = require('precss');
 
 module.exports = {
   entry: {
-      app: './src/activityindicator.jsx',
+      demo: './src/demo/demo.jsx',
   },
   cache: true,
   devtool: 'source-map',
