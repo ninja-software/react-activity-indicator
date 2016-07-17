@@ -1,7 +1,7 @@
 {
   "name": "react-activity-indicator",
   "version": "0.7.3",
-  "description": "",
+  "description": "Simple yet highly configurable activity indicator for React.",
   "main": "src/activityindicator.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
