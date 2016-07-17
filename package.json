@@ -26,8 +26,22 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1"
   },
+  "keywords": [
+    "react",
+    "activity",
+    "indicator",
+    "loader"
+  ],
   "dependencies": {
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
-  }
+  },
+  "homepage": "https://github.com/BlockNinja/react-activity-indicator",
+  "bugs": {
+    "url": "https://github.com/BlockNinja/react-activity-indicator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockNinja/react-activity-indicator"
+  },
 }
