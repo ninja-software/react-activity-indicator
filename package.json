@@ -1,12 +1,12 @@
 {
   "name": "react-activity-indicator",
-  "version": "0.0.1",
+  "version": "0.7",
   "description": "",
-  "main": "build/activityindicator.js",
+  "main": "src/activityindicator.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Alex Dunmow",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.3.7",

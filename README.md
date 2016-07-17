@@ -1,4 +1,4 @@
-# React Acitivity Indicator
+# React Activity Indicator
 
 Simple configurable activity indicator for React.
 

@@ -14,7 +14,7 @@ module.exports = {
   devtool: 'source-map',
   debug: true,
   output: { 
-    path: './build/', 
+    path: './demo/', 
     filename: "[name].js"
   },
   module: {
