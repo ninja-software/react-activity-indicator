@@ -35,7 +35,7 @@ export default class ActivityIndicator extends Component {
       fontSize: 0,
       borderColor: this.props.borderColor || acColor
     }
-    let containerWidth = n * diameter * 2
+    let containerWidth = (n * diameter * 2) - diameter
     return (
       <div className="activity-indicator">
         <div style={{width: containerWidth }}>
