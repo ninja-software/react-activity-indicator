@@ -128,7 +128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        fontSize: 0,
 	        borderColor: this.props.borderColor || acColor
 	      };
-	      var containerWidth = n * diameter * 2;
+	      var containerWidth = n * diameter * 2 - diameter;
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'activity-indicator' },
