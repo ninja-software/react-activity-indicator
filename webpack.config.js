@@ -15,7 +15,7 @@ module.exports = {
   debug: true,
   output: { 
     path: './demo/', 
-    filename: "ai-demo.js"
+    filename: "raidemo.js"
   },
   module: {
     loaders: [
