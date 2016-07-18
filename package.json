@@ -1,6 +1,6 @@
 {
   "name": "react-activity-indicator",
-  "version": "0.7.6",
+  "version": "0.7.61",
   "description": "Simple yet highly configurable activity indicator for React.",
   "main": "build/react-activity-indicator.js",
   "scripts": {
