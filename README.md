@@ -27,6 +27,7 @@ The component accepts these props.
 - `number`: the number of activity indicators `default: 3`
 - `diameter`: size of the loading indicators `default: 20px`
 - `duration`: color transition duration `default: 400`(ms)
+- `color`: color of the inactive loading indicator. `default: transparent`
 - `activeColor`: color of the active loading indicator. `default: black`
 - `borderRadius`: border radius of the loading indicators. `default: 10%`
 - `borderWidth`: border width of the loading indicators. `default: 1px`
