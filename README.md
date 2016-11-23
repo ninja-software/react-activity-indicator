@@ -20,6 +20,11 @@ The CSS file:
 <link rel="stylesheet" type="text/css" href="path/to/activityindicator.css">
 ```
 
+E.g. import in default using webpack:
+```html
+import 'react-activity-indicator/src/activityindicator.css'
+```
+
 ## Usage
 
 The component accepts these props.
