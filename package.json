@@ -4,7 +4,8 @@
   "description": "Simple yet highly configurable activity indicator for React.",
   "main": "build/react-activity-indicator.js",
   "scripts": {
-    "test": "npm-run-all -p build:*",
+    "test": "npm run build",
+    "build": "npm-run-all -p build:*",
     "build:demo": "webpack",
     "build:prod": "webpack --config webpack.prod.config.js"
   },
@@ -28,6 +29,7 @@
     "sass": "^1.0.0-beta.1",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
+    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1"
   },
   "keywords": [

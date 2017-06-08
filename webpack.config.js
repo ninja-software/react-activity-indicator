@@ -54,6 +54,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('activityindicator.css'),
     new UglifyJSPlugin({
+      sourceMap: true,
       minimize: true,
       compress: {
         warnings: false
