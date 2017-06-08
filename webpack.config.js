@@ -1,11 +1,10 @@
-var path = require("path")
-var webpack = require("webpack")
+const path = require("path")
+const webpack = require("webpack")
 
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var autoprefixer = require("autoprefixer")
-var precss = require("precss")
+const autoprefixer = require("autoprefixer")
 
 module.exports = {
   entry: {

@@ -4,7 +4,9 @@
   "description": "Simple yet highly configurable activity indicator for React.",
   "main": "build/react-activity-indicator.js",
   "scripts": {
-    "test": "webpack"
+    "test": "npm-run-all -p build:*",
+    "build:demo": "webpack",
+    "build:prod": "webpack --config webpack.prod.config.js"
   },
   "author": "Alex Dunmow",
   "license": "MIT",
@@ -21,12 +23,11 @@
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
     "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
     "postcss-loader": "^2.0.5",
-    "precss": "^1.4.0",
     "sass": "^1.0.0-beta.1",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
-    "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1"
   },
   "keywords": [
