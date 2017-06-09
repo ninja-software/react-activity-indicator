@@ -5,7 +5,8 @@
 	position: relative;
 }
 .activity-indicator * {
-	box-sizing: border-box
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box
 }
 
 .activity-indicator > div {
@@ -14,9 +15,13 @@
 	width: auto;
 	display: inline-block;
 	position: absolute;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .activity-indicator > div > div {
-	transition-duration: 0.4s;
-}\
+	-webkit-transition-duration: 0.4s;
+	        transition-duration: 0.4s;
+}
+
+/*# sourceMappingURL=activityindicator.css.map*/
